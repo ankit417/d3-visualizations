@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      #container {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+  <script>
+    var data = [100, 200, 300];
+    d3.select("#container")
+      .transition()
+      .duration(5000)
+      .style("background-color", "red");
+  </script>
+</html>
