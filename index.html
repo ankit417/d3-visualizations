@@ -26,6 +26,14 @@
       .attr("width", 500)
       .attr("height", 500);
 
+    svg
+      .append("line")
+      .attr("x1", 100)
+      .attr("x2", 500)
+      .attr("y1", 20)
+      .attr("y2", 20)
+      .attr("stroke", "black");
+
     var bar1 = svg
       .append("rect")
       .attr("fill", "blue")
